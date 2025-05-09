@@ -22,7 +22,7 @@ export const App = () => {
     <HelmetProvider>
       <TrpcProvider>
         <AppContextProvider>
-          <BrowserRouter>
+          <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
             <SentryUser />
             <NotAuthRouteTracker />
             <Routes>
